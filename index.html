@@ -52,6 +52,82 @@
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		  
+    <tr onmouseout="synopground_stop()" onmouseover="synopground_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='bog_image'><video  width=100% muted autoplay loop>
+          <source src="images/bog.jpg" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/bog.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function bog_start() {
+            document.getElementById('bog_image').style.opacity = "1";
+          }
+
+          function bog_stop() {
+            document.getElementById('bog_image').style.opacity = "0";
+          }
+          bog_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://creiser.github.io/binary_opacity_grid/">
+          <span class="papertitle">SynopGround: A Large-Scale Dataset for Multi-Paragraph Video Grounding from TV Dramas and Synopses
+</span>
+        </a>
+        <br>
+	<strong>Chaolei Tan*<strong>, Zihang Lin*, Junfu Pu, Zhongang Qi, Wei-Yi Pei, Zhi Qu, Yexin Wang, Ying Shan, Wei-Shi Zheng, Jian-Fang Hu
+        <br>
+        <em>ACM MM</em>, 2024
+        <br>
+        <a href="https://arxiv.org/pdf/2403.11463">paper</a>
+        <p></p>
+        <p>
+        Introducing a large-scale video grounding dataset that enables research on both long-form videos and long-term queries.
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="wsvpg_stop()" onmouseover="wsvpg_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='bog_image'><video  width=100% muted autoplay loop>
+          <source src="images/bog.jpg" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/bog.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function bog_start() {
+            document.getElementById('bog_image').style.opacity = "1";
+          }
+
+          function bog_stop() {
+            document.getElementById('bog_image').style.opacity = "0";
+          }
+          bog_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://creiser.github.io/binary_opacity_grid/">
+          <span class="papertitle">Siamese Learning with Joint Alignment and Regression for Weakly-Supervised Video Paragraph Grounding
+</span>
+        </a>
+        <br>
+	<strong>Chaolei Tan<strong>, Jianhuang Lai, Wei-Shi Zheng, Jian-Fang Hu
+        <br>
+        <em>CVPR</em>, 2024
+        <br>
+        <a href="https://arxiv.org/pdf/2403.11463">paper</a>
+        <p></p>
+        <p>
+        The first attempt to address video paragraph grounding without using temporal labels.
+        </p>
+      </td>
+    </tr>
 
     <tr onmouseout="hscnet_stop()" onmouseover="hscnet_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
@@ -79,14 +155,14 @@
 </span>
         </a>
         <br>
-	Chaolei Tan, Zihang Lin, Jian-Fang Hu, Wei-Shi Zheng, Jianhuang Lai
+	<strong>Chaolei Tan<strong>, Zihang Lin, Jian-Fang Hu, Wei-Shi Zheng, Jianhuang Lai
         <br>
         <em>CVPR</em>, 2023
         <br>
         <a href="https://openaccess.thecvf.com/content/CVPR2023/html/Tan_Hierarchical_Semantic_Correspondence_Networks_for_Video_Paragraph_Grounding_CVPR_2023_paper.html">paper</a>
         <p></p>
         <p>
-        The first hierarchical modeling framework for video paragraph grounding, which enables to align multi-level video-language semantic correspondences for decoding temporal grounding results at multiple granularities.
+        The first hierarchical modeling framework for video paragraph grounding that hierarchically aligns video-language semantic correspondences for decoding temporal grounding results at multiple granularities.
         </p>
       </td>
     </tr>
