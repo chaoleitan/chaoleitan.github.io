@@ -46,8 +46,52 @@
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="fhnet_stop()" onmouseover="fhnet_start()">
+			      <td style="padding:10px;width:40%;vertical-align:middle">
+			        <div class="one" style="width:100%">
+			          <div class="two" id='fhnet_image' style="width:100%"><video  width=100% muted autoplay loop>
+			          <source src="images/fhnet.mp4" type="video/mp4">
+			          Your browser does not support the video tag.
+			          </video></div>
+			          <img src='images/fhnet.jpg' style="width:100%">
+			        </div>
+			        <script type="text/javascript">
+			          function fhnet_start() {
+			            document.getElementById('fhnet_image').style.opacity = "1";
+			          }
+
+			          function fhnet_stop() {
+			            document.getElementById('fhnet_image').style.opacity = "0";
+			          }
+			          refnerf_stop()
+			        </script>
+			      </td>
+			            <td style="padding:10px;width:60%;vertical-align:middle">
+			          <a href="papers/FH-Net-ECCV2022.pdf">
+			            <papertitle>FH-Net: A Fast Hierarchical Network for Scene Flow Estimation on Real-world Point Clouds</papertitle>
+			          </a>
+			          <br>
+			          <strong>Lihe Ding*</strong>,
+			          Shaocong Dong*,
+			          Tingfa Xu†,
+			          Xinli Xu,
+			          Jie Wang,
+			          <a href="https://scholar.google.com/citations?user=sQ_nP0ZaMn0C&hl=en">Jianan Li</a>†
+			          <br>
+			    <em>ECCV</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+			          <br>
+			          <a href="https://github.com/pigtigger/FH-Net">project page</a>
+			    /
+			          <a href="papers/FH-Net-ECCV2022.pdf">paper</a>
+			    /
+			          <a href="https://drive.google.com/uc?export=download&id=1p5YfvI7B03psV671uBlJZTtq687vpgrC">video</a>
+			          <p></p>
+			          <p>We establish new lidar-scanned scene flow datasets and propose a fast and hierarchical network for real-world scene flow estimation.</p>
+			        </td>
+			      </tr>
 		  
-	<tr onmouseout="synop_stop()" onmouseover="synop_start()">
+<!-- 	<tr onmouseout="synop_stop()" onmouseover="synop_start()">
 	<td style="padding:0px;width:40%;vertical-align:middle">
 	<div class="one">
 	  <div class="two" id='synop_image'><video  width=100% muted autoplay loop>
@@ -77,7 +121,7 @@
 	<em>ACM International Conference on Multimedia (ACM MM)</em>, 2024
 	<p>Introducing a large-scale video grounding dataset with dense paragraph timestamps to enable research on both long-form videos and long-term queries.</p>
 	</td>
-	</tr>
+	</tr> -->
 
 <!--     <tr onmouseout="wsvpg_stop()" onmouseover="wsvpg_start()">
       <td style="padding:0px;width:40%;vertical-align:middle">
