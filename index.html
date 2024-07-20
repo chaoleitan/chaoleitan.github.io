@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
   </head>
-	
+
   <body>
     <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
@@ -30,7 +30,7 @@
                 </p>
               </td>
               <td style="padding:2.5%;width:40%;max-width:40%">
-                <a href="images/JonBarron.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/JonBarron.jpg" class="hoverZoomLink"></a>
+                <a href="images/sysu.png"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/sysu.png" class="hoverZoomLink"></a>
               </td>
             </tr>
           </tbody></table>
@@ -47,24 +47,24 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 		  
-	<tr onmouseout="synopground_stop()" onmouseover="synopground_start()">
+	<tr onmouseout="synop_stop()" onmouseover="synop_start()">
 	<td style="padding:20px;width:25%;vertical-align:middle">
 	<div class="one">
-	  <div class="two" id='bog_image'><video  width=100% muted autoplay loop>
-	  <source src="images/bog.jpg" type="video/mp4">
+	  <div class="two" id='synop_image'><video  width=100% muted autoplay loop>
+	  <source src="images/SynopGround.png" type="video/mp4">
 	  Your browser does not support the video tag.
 	  </video></div>
-	  <img src='images/bog.jpg' width=100%>
+	  <img src='images/SynopGround.png' width=100%>
 	</div>
 	<script type="text/javascript">
-	  function bog_start() {
-	    document.getElementById('bog_image').style.opacity = "1";
+	  function synop_start() {
+	    document.getElementById('synop_image').style.opacity = "1";
 	  }
 	
-	  function bog_stop() {
-	    document.getElementById('bog_image').style.opacity = "0";
+	  function synop_stop() {
+	    document.getElementById('synop_image').style.opacity = "0";
 	  }
-	  bog_stop()
+	  synop_stop()
 	</script>
 	</td>
 	<td style="padding:20px;width:75%;vertical-align:middle">
@@ -212,7 +212,7 @@
       </td>
     </tr>
 
-            <td style="padding:20px;width:160;height:160;vertical-align:middle">
+            <td style="padding:20px;width:25%;vertical-align:middle">
               <img src="images/sysu.png">
             </td>
             <td width="75%" valign="center">
