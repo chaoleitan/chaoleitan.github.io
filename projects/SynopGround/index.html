@@ -196,32 +196,12 @@
   <div class="container is-max-desktop">
   <div class="hero-body">
   <h4 class="subtitle has-text-centered">
-  🔥<span style="color: #ff3860"></span> LLaVA-1.5 achieves SoTA on 11 benchmarks, with just simple modifications to the original LLaVA, utilizes all public data, completes training in ~1 day on a single 8-A100 node, and surpasses methods that use billion-scale data.
+  🔥<span style="color: #ff3860"></span> SynopGround is the first video grounding dataset characterized by both long-form video and long-term query inputs, which has ~100 words per query and ~43 minutes per video on average.
   <br><br>
-  LLaVA represents a novel end-to-end trained large multimodal model that combines a vision encoder and Vicuna
-  for general-purpose visual and language understanding,
-  achieving impressive chat capabilities mimicking spirits of the multimodal GPT-4 and setting a new state-of-the-art accuracy on Science QA.
+  It brings unique challenges in modeling the long-term video-language relationships.  In comparison to existing datasets that focus on traditional short and simple queries, our SynopGround introduces long complex paragraphs as language queries into video grounidng for the first time,
+  which benefits the model to learn unambiguous cross-modal correspondence and the ability to handle complicated long-term contexts.
   </h4>
   </div>
-  </div>
-  </section>
-
-  <section class="section hero">
-  <div class="container is-max-desktop">
-  <div class="columns is-centered has-text-centered">
-  <div class="column">
-  <h2 class="title is-3">SynopGround: Video Grounding with both long-form videos and long-term queries.</h2>
-  <div class="content has-text-justified">
-  </div>
-  <div class="column is-centered has-text-centered">
-  <img src="images/intro.png" alt="neti" width="100%"/>
-  <br>
-  (Left) SynopGround is characterized by its both long-term video and query inputs, i.e., ~100 words per query and ~43 minutes per video on average, which brings unique challenges in modeling the long-term video-language relationships. 
-  <br>
-  (Right) In comparison to existing datasets that focus on traditional short and simple queries, our SynopGround introduces long complex paragraphs as language queries into video grounidng for the first time,
-  which benefits the model to learn unambiguous cross-modal correspondence and the ability to handle complicated long-term contexts.
-  </div>
-  </p>
   </div>
   </section>
   
@@ -242,12 +222,31 @@
   </div>
   </div>
   </section>
+
+  <section class="section hero">
+  <div class="container is-max-desktop">
+  <div class="columns is-centered has-text-centered">
+  <div class="column">
+  <h2 class="title is-3">Introduction</h2>
+  <div class="content has-text-justified">
+  </div>
+  <div class="column is-centered has-text-centered">
+  <img src="images/intro.png" alt="neti" width="100%"/>
+  <br>
+  (Left) SynopGround is characterized by its both long-term video and query inputs, i.e., ~100 words per query and ~43 minutes per video on average, which brings unique challenges in modeling the long-term video-language relationships. 
+  <br>
+  (Right) In comparison to existing datasets that focus on traditional short and simple queries, our SynopGround introduces long complex paragraphs as language queries into video grounidng for the first time,
+  which benefits the model to learn unambiguous cross-modal correspondence and the ability to handle complicated long-term contexts.
+  </div>
+  </p>
+  </div>
+  </section>
   
   <section class="section hero">
   <div class="container is-max-desktop">
   <div class="columns is-centered has-text-centered">
   <div class="column">
-<!--   <h2 class="title is-3">Our Meta-Personalized VLM</h2> -->
+  <h2 class="title is-3">Illustration of Multi-Paragraph Video Grounding in our SynopGround</h2>
   <div class="content has-text-justified">
   </div>
   <div class="column is-centered has-text-centered">
