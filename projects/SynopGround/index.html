@@ -254,7 +254,7 @@
   </div>
   <ul class="column is-centered has-text-justified">
   <p>
-  <b>Multi-Paragraph Video Grounding (MPVG) setting and two representative video samples in our SynopGround:</b>
+  <b>Multi-Paragraph Video Grounding (MPVG) and two representative samples in our SynopGround:</b>
   Given a video and a synopsis <i>Q</i> that contains <i>N</i> paragraphs {<i>Q<sup>1</sup></i>, <i>Q<sup>2</sup></i>, ..., <i>Q<sup>N</sup></i>}, the model should predict the corresponding temporal interval 
   for each paragraph <i>Q<sup>i</sup></i> in the form of starting and ending time.
   It is much more complex and requires to understand both short-term intra-paragraph semantics and long-term inter-paragraph dependencies for video grounding, which connects the complex temporal structures of long videos with the complicated semantics of long paragraphs.
@@ -302,6 +302,7 @@
   </div>
   <ul class="column is-centered has-text-justified">
   <p>
+  <b>Comprehensive comparisons of our SynopGround with the existing video grounding datasets.</b>
   As shown, the videos in our dataset are much longer than those in Charades-STA, ActivityNet-Captions, DiDeMo, TACoS and Ego4d-NLQ. Although the average video duration in our dataset is shorter than that of MAD, our total duration of videos is more than twice that of MAD, showing that our dataset is at a large scale.
   Furthermore, the duration of target segments in our dataset is significantly longer. This requires the model to capture the full picture of the holistic story conveyed in the language queries and the video, which is challenging.
   Besides, our dataset is the first benchmark to introduce paragraph queries, and the average number of words in each query is significantly larger than that of other datasets, which greatly reduces the semantic ambiguity of the queries and brings more challenges to the model's cross-modal understandinging abilities.
