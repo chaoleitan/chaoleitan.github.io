@@ -270,6 +270,30 @@
   <div class="container is-max-desktop">
   <div class="columns is-centered has-text-centered">
   <div class="column">
+  <h2 class="title is-3">Data Distribution</h2>
+  <div class="content has-text-justified">
+  </div>
+  <div class="column is-centered has-text-centered">
+  <img src="images/data_distribution.png" alt="neti" width="100%"/>
+  </div>
+  <ul class="column is-centered has-text-justified">
+  <p>
+  <b>(a): Genre distribution of TV dramas. (b): Normalized duration of target video segments. (c): Number of queries per video. (d): Normalized start timestamp distribution. (e): Normalized end timestamp distribution.</b>
+  As shown in figure (a) above, the TV dramas used in our dataset cover a wide spectrum of genres, which demonstrates the diversity of the collected data. In figure (b) above, we show the normalized duration of the target video segments. Most of the target video segments cover less than 20% of the full video, which can be challenging for the model to correctly localize.
+  In figure (c) above, we visualize the distribution of the number of queries/paragraphs in each synopsis, and most synopses are composed of 5-13 paragraphs. Exploring the contextual information among these paragraphs is important for achieving promising performance in our multi-paragraph video grounding task.
+  In figure (d) and (e) above, we visualize the temporal distributions of the starting timestamps and ending timestamps of the target video segments. Both of them approximately present a uniform distribution, which ensures the model cannot benefit much from the distribution bias.
+  </p>
+  </ul>
+  </div>
+  </div>
+  </p>
+  </div>
+  </section>
+
+  <section class="section hero">
+  <div class="container is-max-desktop">
+  <div class="columns is-centered has-text-centered">
+  <div class="column">
   <h2 class="title is-3">Detailed Statistical Comparison with Previous Video Grounding Datasets</h2>
   <div class="content has-text-justified">
   </div>
