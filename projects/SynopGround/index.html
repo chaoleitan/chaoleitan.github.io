@@ -192,22 +192,16 @@
     </div>
   </section>
   
-  <section class="section hero">
+  <section class="hero teaser">
   <div class="container is-max-desktop">
-  <div class="columns is-centered has-text-centered">
-  <div class="column">
-<!--   <h2 class="title is-3">Our Meta-Personalized VLM</h2> -->
-  <div class="content has-text-justified">
+  <div class="hero-body">
+  <h4 class="subtitle has-text-centered">
+  🔥<span style="color: #ff3860"></span> SynopGround is the first video grounding dataset characterized by both long-form video and long-term query inputs, which has ~100 words per query and ~43 minutes per video on average.
+  <br><br>
+  It brings unique challenges in modeling the long-term video-language relationships.  In comparison to existing datasets that focus on traditional short and simple queries, our SynopGround introduces long complex paragraphs as language queries into video grounidng for the first time,
+  which benefits the model to learn unambiguous cross-modal correspondence and the ability to handle complicated long-term contexts.
+  </h4>
   </div>
-  <div class="column is-centered has-text-centered">
-  <img src="images/intro.png" alt="neti" width="100%"/>
-  <br>
-  (Left) In-depth analysis on the MME benchmark for the performance improvements.
-  Our VLFeedback dataset brings clearer gains in OCR recognition and code reasoning tasks. 
-  <br>
-  (Right) Relative performance improvement by performing DPO with RLHF-V preference data and a subset of our VLFeedback dataset. Our GPT-4V annotated preference dataset brings more consistent improvements on four benchmarks.
-  </div>
-  </p>
   </div>
   </section>
   
@@ -228,12 +222,31 @@
   </div>
   </div>
   </section>
+
+  <section class="section hero">
+  <div class="container is-max-desktop">
+  <div class="columns is-centered has-text-centered">
+  <div class="column">
+  <h2 class="title is-3">Introduction</h2>
+  <div class="content has-text-justified">
+  </div>
+  <div class="column is-centered has-text-centered">
+  <img src="images/intro.png" alt="neti" width="100%"/>
+  <br>
+  (Left) SynopGround is characterized by its both long-term video and query inputs, i.e., ~100 words per query and ~43 minutes per video on average, which brings unique challenges in modeling the long-term video-language relationships. 
+  <br>
+  (Right) In comparison to existing datasets that focus on traditional short and simple queries, our SynopGround introduces long complex paragraphs as language queries into video grounidng for the first time,
+  which benefits the model to learn unambiguous cross-modal correspondence and the ability to handle complicated long-term contexts.
+  </div>
+  </p>
+  </div>
+  </section>
   
   <section class="section hero">
   <div class="container is-max-desktop">
   <div class="columns is-centered has-text-centered">
   <div class="column">
-<!--   <h2 class="title is-3">Our Meta-Personalized VLM</h2> -->
+  <h2 class="title is-3">Dataset Visualization</h2>
   <div class="content has-text-justified">
   </div>
   <div class="column is-centered has-text-centered">
@@ -241,9 +254,10 @@
   </div>
   <ul class="column is-centered has-text-justified">
   <p>
-  <b>The proposed Multi-Paragraph Video Grounding (MPVG) setting and representative video samples in our SynopGround:</b>
+  <b>Multi-Paragraph Video Grounding (MPVG) and two representative dataset samples.</b>
   Given a video and a synopsis <i>Q</i> that contains <i>N</i> paragraphs {<i>Q<sup>1</sup></i>, <i>Q<sup>2</sup></i>, ..., <i>Q<sup>N</sup></i>}, the model should predict the corresponding temporal interval 
   for each paragraph <i>Q<sup>i</sup></i> in the form of starting and ending time.
+  It is much more complex and requires to understand both short-term intra-paragraph semantics and long-term inter-paragraph dependencies for video grounding, which connects the complex temporal structures of long videos with the complicated semantics of long paragraphs.
   </p>
   </ul>
   </div>
@@ -251,19 +265,98 @@
   </p>
   </div>
   </section>
-  
-  <section class="hero teaser">
-    <div class="container is-max-desktop">
-      <div class="hero-body">
-        <h4 class="subtitle has-text-centered">
-          🔥<span style="color: #ff3860"></span> LLaVA-1.5 achieves SoTA on 11 benchmarks, with just simple modifications to the original LLaVA, utilizes all public data, completes training in ~1 day on a single 8-A100 node, and surpasses methods that use billion-scale data.
-          <br><br>
-          LLaVA represents a novel end-to-end trained large multimodal model that combines a vision encoder and Vicuna
-          for general-purpose visual and language understanding,
-          achieving impressive chat capabilities mimicking spirits of the multimodal GPT-4 and setting a new state-of-the-art accuracy on Science QA.
-        </h4>
-      </div>
-    </div>
+
+  <section class="section hero">
+  <div class="container is-max-desktop">
+  <div class="columns is-centered has-text-centered">
+  <div class="column">
+  <h2 class="title is-3">Data Distribution</h2>
+  <div class="content has-text-justified">
+  </div>
+  <div class="column is-centered has-text-centered">
+  <img src="images/data_distribution.png" alt="neti" width="100%"/>
+  </div>
+  <ul class="column is-centered has-text-justified">
+  <p>
+  <b>(a): Genre distribution of TV dramas. (b): Normalized duration of target video segments. (c): Number of queries per video. (d): Normalized start timestamp distribution. (e): Normalized end timestamp distribution.</b>
+  As shown in figure (a) above, the TV dramas used in our dataset cover a wide spectrum of genres, which demonstrates the diversity of the collected data. In figure (b) above, we show the normalized duration of the target video segments. Most of the target video segments cover less than 20% of the full video, which can be challenging for the model to correctly localize.
+  In figure (c) above, we visualize the distribution of the number of queries/paragraphs in each synopsis, and most synopses are composed of 5-13 paragraphs. Exploring the contextual information among these paragraphs is important for achieving promising performance in our multi-paragraph video grounding task.
+  In figure (d) and (e) above, we visualize the temporal distributions of the starting timestamps and ending timestamps of the target video segments. Both of them approximately present a uniform distribution, which ensures the model cannot benefit much from the distribution bias.
+  </p>
+  </ul>
+  </div>
+  </div>
+  </p>
+  </div>
+  </section>
+
+  <section class="section hero">
+  <div class="container is-max-desktop">
+  <div class="columns is-centered has-text-centered">
+  <div class="column">
+  <h2 class="title is-3">Detailed Statistical Comparison with Previous Video Grounding Datasets</h2>
+  <div class="content has-text-justified">
+  </div>
+  <div class="column is-centered has-text-centered">
+  <img src="images/statistics.png" alt="neti" width="100%"/>
+  </div>
+  <ul class="column is-centered has-text-justified">
+  <p>
+  <b>Comprehensive comparisons of our SynopGround with the existing video grounding datasets.</b>
+  As shown, the videos in our dataset are much longer than those in Charades-STA, ActivityNet-Captions, DiDeMo, TACoS and Ego4d-NLQ. Although the average video duration in our dataset is shorter than that of MAD, our total duration of videos is more than twice that of MAD, showing that our dataset is at a large scale.
+  Furthermore, the duration of target segments in our dataset is significantly longer. This requires the model to capture the full picture of the holistic story conveyed in the language queries and the video, which is challenging.
+  Besides, our dataset is the first benchmark to introduce paragraph queries, and the average number of words in each query is significantly larger than that of other datasets, which greatly reduces the semantic ambiguity of the queries and brings more challenges to the model's cross-modal understandinging abilities.
+  Moreover, our synopsis queries involve both abstract expressions and concrete descriptions, enabling the model to learn semantic concepts at more diverse abstraction levels.
+  </p>
+  </ul>
+  </div>
+  </div>
+  </p>
+  </div>
+  </section>
+
+  <section class="section hero">
+  <div class="container is-max-desktop">
+  <div class="columns is-centered has-text-centered">
+  <div class="column">
+  <h2 class="title is-3">Baseline Method: Local-Global Multimodal Reasoner (LGMR)</h2>
+  <div class="content has-text-justified">
+  </div>
+  <div class="column is-centered has-text-centered">
+  <img src="images/baseline_method.png" alt="neti" width="100%"/>
+  </div>
+  <ul class="column is-centered has-text-justified">
+  <p>
+  <b>Overview of our proposed Local-Global Multimodal Reasoner (LGMR).</b>
+  It consists of a local-global temporal encoder for structural long-term temporal modeling and a local-global iterative decoder to adaptively extract the local subparagraph features guided by global paragraph semantics and reason through the local and global semantics for multi-paragraph video grounding.
+  The video encoder decomposes the temporal correlations of long videos into intra-window and inter-window parts for efficient long-term temporal modeling. The query decoder first extracts subparagraph representations with a set of learnable queries guided by the global semantics of paragraphs, and then repeatedly conducts cross-modal reasoning within and across the local and global queries.
+  </p>
+  </ul>
+  </div>
+  </div>
+  </p>
+  </div>
+  </section>
+
+  <section class="section hero">
+  <div class="container is-max-desktop">
+  <div class="columns is-centered has-text-centered">
+  <div class="column">
+  <h2 class="title is-3">Experimental Results</h2>
+  <div class="content has-text-justified">
+  </div>
+  <div class="column is-centered has-text-centered">
+  <img src="images/attended_tokens.png" alt="neti" width="100%"/>
+  </div>
+  <ul class="column is-centered has-text-justified">
+  <p>
+  TODO.
+  </p>
+  </ul>
+  </div>
+  </div>
+  </p>
+  </div>
   </section>
 
   <section class="section" id="BibTeX">
