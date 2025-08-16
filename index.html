@@ -56,7 +56,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
         <tr>
         <td style="padding:20px;width:100%;vertical-align:middle">
-        <h2>Selected Publications</h2>
+        <h2>Selected Publications & Preprints</h2>
         <p>* indicates equal contributions. See the full list in <a href="https://scholar.google.com/citations?user=DcvN3DgAAAAJ&hl=en">Google Scholar</a></p>
         </td>
         </tr>
@@ -159,6 +159,40 @@
 	<br>
 	<a href="https://openaccess.thecvf.com/content/CVPR2023/html/Tan_Hierarchical_Semantic_Correspondence_Networks_for_Video_Paragraph_Grounding_CVPR_2023_paper.html">Paper</a>
 	<p>Introducing hierarchical modeling into video paragraph grounding by hierarchically aligning semantic correspondence across videos and paragraphs for temporal decoding at multiple granularities.</p>
+	</td>
+	</tr>
+
+	<tr onmouseout="longrvos_stop()" onmouseover="longrvos_start()">
+ 	<td style="padding:20px;width:40%;vertical-align:middle">
+        <div class="one" style="width:100%">
+	<div class="two" id='longrvos_image' style="width:100%"><video  width=100% muted autoplay loop>
+	<source src="images/longrvos.png" type="video/mp4" width=100%>Your browser does not support the video tag.</video>
+	</div>
+	<img src='images/longrvos.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function longrvos_start() {
+            document.getElementById('longrvos_image').style.opacity = "1";
+          }
+
+          function longrvos_stop() {
+            document.getElementById('longrvos_image').style.opacity = "0";
+          }
+          longrvos_stop()
+        </script>
+	</td>
+ 	<td style="padding:20px;width:60%;vertical-align:middle">
+	<a href="https://arxiv.org/abs/2505.12702">
+  	<span class="papertitle">Long-RVOS: A Comprehensive Benchmark for Long-term Referring Video Object Segmentation</span>
+	</a>
+	<br>
+	Tianming Liang, Haichao Jiang, Yuting Yang, <strong>Chaolei Tan</strong>, Shuai Li, Wei-Shi Zheng, Jian-Fang Hu
+	<br>
+	<em>ArXiv Preprint</em>, 2025
+	<br>
+	<a href="https://arxiv.org/abs/2505.12702">Paper</a>/
+	<a href="https://isee-laboratory.github.io/Long-RVOS/">Website</a>
+	<p>Introducing Long-term Referring Video Object Segmentation (Long-RVOS) that jointly considers static, dynamic, and hybrid types of referring expressions for segmenting objects in long-form videos.</p>
 	</td>
 	</tr>
 
